@@ -47,8 +47,6 @@ with open('/content/drive/My Drive/Colab Notebooks/FIFA_Player_Ratings/GBRtraine
 
 def predict_rating(features):
 
-    # Implement your prediction logic here
-    # This is just a placeholder
     return model.predict(features)
 
 if __name__ == '__main__':
