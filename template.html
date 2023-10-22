@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Rating Prediction</title>
+</head>
+<body>
+    <h1>Player Rating Prediction</h1>
+    <p>Enter 10 Features From the list below to continue:
+        <li>
+            <ul>
+                overall, potential, movement_reactions, passing, mentality_composure, dribbling, release_clause_eur, wage_eur, value_eur,
+power_shot_power,'physic','mentality_vision','attacking_short_passing','shooting','goalkeeping_speed',
+'skill_long_passing','age','skill_ball_control','international_reputation','league_level', 'nation_team_id','sofifa_id']
+
+            </ul>
+        </li>
+    </p>
+    <form method="POST" action="/predict">
+        <label for="feature1">Feature 1:</label>
+        <input type="text" id="feature1" name="feature1" required><br>
+
+        <label for="feature2">Feature 2:</label>
+        <input type="text" id="feature2" name="feature2" required><br>
+
+        <label for="feature3">Feature 3:</label>
+        <input type="text" id="feature3" name="feature3" required><br>
+
+        <label for="feature4">Feature 4:</label>
+        <input type="text" id="feature4" name="feature4" required><br>
+
+        <label for="feature5">Feature 5:</label>
+        <input type="text" id="feature5" name="feature5" required><br>
+
+        <label for="feature6">Feature 6:</label>
+        <input type="text" id="feature6" name="feature6" required><br>
+
+        <label for="feature7">Feature 7:</label>
+        <input type="text" id="feature7" name="feature7" required><br>
+
+        <label for="feature8">Feature 8:</label>
+        <input type="text" id="feature8" name="feature8" required><br>
+
+        <label for="feature9">Feature 9:</label>
+        <input type="text" id="feature9" name="feature9" required><br>
+
+        <label for="feature10">Feature 10:</label>
+        <input type="text" id="feature10" name="feature10" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
