@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-
+model = pickle.load('GBRtrained_model.pkl')
 def main():
     st.title("Player Rating Prediction")
 
@@ -27,7 +27,7 @@ def main():
 
         for feature in selected_features:
             value = st.text_input(f"Enter value for {feature}", key=feature)
-            feature_values.append(value)
+            feature_values.append(int(value))
 
         if st.button("Predict"):
             # Call your prediction function with the feature values and display the result
@@ -40,8 +40,7 @@ def main():
         st.warning("Please select exactly 10 features.")
 
 def predict_rating(features):
-
-    return 88
+    return model.predict(features)
     
 def confidence(features):
 
