@@ -38,10 +38,11 @@ def main():
         st.warning("Please select exactly 10 features.")
 
 def predict_rating(features):
-    return 83.0
+    return model.prediction(features)
     
 def confidence(features):
 
-    return 0.96566666
+    return confidence
+    
 if __name__ == '__main__':
     main()
