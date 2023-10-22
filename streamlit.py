@@ -32,7 +32,9 @@ def main():
         if st.button("Predict"):
             # Call your prediction function with the feature values and display the result
             prediction = predict_rating(feature_values)
+            Confidence = predict_rating(feature_values)
             st.success(f"The predicted rating is: {prediction}")
+            st.success(f"The confidence is: {Confidence}")
 
     else:
         st.warning("Please select exactly 10 features.")
