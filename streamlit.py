@@ -12,7 +12,7 @@ import streamlit as st
 def main():
     st.title("Player Rating Prediction")
 
-    features_list = ['overall', 'potential', 'movement_reactions', 'passing', 'mentality_composure', 'dribbling',
+    features_list = ['potential', 'movement_reactions', 'passing', 'mentality_composure', 'dribbling',
                      'release_clause_eur', 'wage_eur', 'value_eur', 'power_shot_power', 'physic', 'mentality_vision',
                      'attacking_short_passing', 'shooting', 'goalkeeping_speed', 'skill_long_passing', 'age',
                      'skill_ball_control', 'international_reputation', 'league_level']
