@@ -25,7 +25,7 @@ def main():
 
         for feature in selected_features:
             value = st.text_input(f"Enter value for {feature}", key=feature)
-            feature_values.append(int(value))
+            feature_values.append(value)
 
         if st.button("Predict"):
             # Call your prediction function with the feature values and display the result
