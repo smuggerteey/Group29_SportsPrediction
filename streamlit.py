@@ -11,14 +11,9 @@ import streamlit as st
 
 def main():
     st.title("Player Rating Prediction")
-    # Train the model
-model = GradientBoostingRegressor()
-model.fit(Xtrain, Ytrain)
-
 # Save the trained model to a file
 with open('/content/drive/My Drive/Colab Notebooks/FIFA_Player_Ratings/GBRtrained_model.pkl', 'wb') as f:
     pickle.dump(model, f)
-
 
     features_list = ['overall', 'potential', 'movement_reactions', 'passing', 'mentality_composure', 'dribbling',
                      'release_clause_eur', 'wage_eur', 'value_eur', 'power_shot_power', 'physic', 'mentality_vision',
