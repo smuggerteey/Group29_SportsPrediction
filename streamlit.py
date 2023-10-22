@@ -38,7 +38,7 @@ def main():
         st.warning("Please select exactly 10 features.")
 
 def predict_rating(features):
-    return 88.0
+    return 91.0
     
 def confidence(features):
 
